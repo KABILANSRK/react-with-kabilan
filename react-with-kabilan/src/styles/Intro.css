@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; 
+    color: white;
+}
+
+.heading {
+    background-color: #1a1a1a; 
+    color: white;
+    font-size: 2.5em;
+    padding: 40px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.head-span {
+    color: #ff4500;
+    margin-left: 10px;
+}
+
+.body-whitebg {
+    background-color: white;
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; 
+    border-radius: 8px; 
+}
+
+.body-blackbg {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 60px;
+    text-align: center;
+    width: 100%;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.body-blackbg h2 {
+    margin: 0;
+    font-size: 1.8em;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.footer-whitebg {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+    gap: 40px;
+    margin: 0 50px 40px;
+}
+
+.topics-blackbg,
+.features-blackbg {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.topics-blackbg {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+}
+
+.features-blackbg {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.topics-blackbg h2,
+.features-blackbg h2 {
+    color: #ff4500; 
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+}
+
+.topic-blackbg,
+.topics-whitebg,
+.features-blackbg div, 
+.features-whitebg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+}
+
+.topic-blackbg {
+    background-color: #1a1a1a; 
+    border: 1px solid #333;
+}
+
+.topics-whitebg {
+    background-color: white;
+    color: #1a1a1a; 
+    border: 1px solid #eee;
+}
+
+.features-blackbg div { 
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+    padding: 20px; 
+    margin-bottom: 15px;
+    justify-content: center; 
+    text-align: center;
+}
+
+.features-whitebg {
+    background-color: white;
+    color: #1a1a1a;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-bottom: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+input[type="checkbox"] {
+    appearance: none; 
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff4500;
+    border-radius: 50%; 
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; 
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ff4500; 
+    border-color: #ff4500; 
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white; 
+    border-radius: 50%;
+}
+
+
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 2em;
+        padding: 30px 20px;
+    }
+
+    .body-whitebg {
+        margin: 15px 30px;
+        padding: 8px;
+    }
+
+    .body-blackbg {
+        padding: 30px 40px;
+    }
+
+    .body-blackbg h2 {
+        font-size: 1.5em;
+    }
+
+    .footer-whitebg {
+        flex-direction: column; 
+        padding: 15px 30px;
+        margin: 0 30px 30px;
+        gap: 30px; 
+    }
+
+    .topics-blackbg,
+    .features-blackbg {
+        flex: none;
+        width: 100%;
+        padding: 25px;
+    }
+
+    .topics-blackbg h2,
+    .features-blackbg h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .topic-blackbg,
+    .topics-whitebg,
+    .features-blackbg div,
+    .features-whitebg {
+        font-size: 1em;
+        padding: 12px 15px;
+        margin-bottom: 8px;
+    }
+
+    .features-blackbg div,
+    .features-whitebg {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.8em;
+        padding: 25px 15px;
+    }
+
+    .head-span {
+        margin-left: 5px; 
+    }
+
+    .body-whitebg {
+        margin: 10px 20px;
+        padding: 5px;
+    }
+
+    .body-blackbg {
+        padding: 25px 30px;
+    }
+
+    .body-blackbg h2 {
+        font-size: 1.3em;
+    }
+
+    .footer-whitebg {
+        padding: 10px 20px;
+        margin: 0 20px 20px;
+        gap: 20px;
+    }
+
+    .topics-blackbg,
+    .features-blackbg {
+        padding: 20px;
+    }
+
+    .topics-blackbg h2,
+    .features-blackbg h2 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    .topic-blackbg,
+    .topics-whitebg,
+    .features-blackbg div,
+    .features-whitebg {
+        font-size: 0.95em;
+        padding: 10px 12px;
+        margin-bottom: 7px;
+    }
+
+    .features-blackbg div,
+    .features-whitebg {
+        padding: 12px;
+    }
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    input[type="checkbox"]:checked::after {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.5em;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .head-span {
+        display: block; 
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .body-whitebg {
+        margin: 10px 15px;
+        padding: 5px;
+    }
+
+    .body-blackbg {
+        padding: 20px 20px;
+    }
+
+    .body-blackbg h2 {
+        font-size: 1.1em;
+    }
+
+    .footer-whitebg {
+        padding: 10px 15px;
+        margin: 0 15px 15px;
+        gap: 15px;
+    }
+
+    .topics-blackbg,
+    .features-blackbg {
+        padding: 15px;
+    }
+
+    .topics-blackbg h2,
+    .features-blackbg h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .topic-blackbg,
+    .topics-whitebg {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px;
+    }
+
+    .topic-blackbg h4,
+    .topics-whitebg h4 {
+        margin-bottom: 5px; 
+    }
+
+    .features-blackbg div,
+    .features-whitebg {
+        font-size: 0.9em;
+        padding: 10px;
+        margin-bottom: 10px; 
+    }
+
+    input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    input[type="checkbox"]:checked::after {
+        width: 6px;
+        height: 6px;
+    }
+}
